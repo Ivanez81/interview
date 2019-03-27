@@ -1,11 +1,11 @@
 package ru.blinov.hw1.builder;
 
-public class Person implements PersonBuilder {
-    Name name;
-    Address address;
-    String phone;
-    int age;
-    String gender;
+public class PersonBuilder implements Builder {
+    private Name name;
+    private Address address;
+    private String phone;
+    private int age;
+    private String gender;
 
     @Override
     public void setName(Name name) {
@@ -33,6 +33,6 @@ public class Person implements PersonBuilder {
     }
 
     public Person getPerson() {
-        return new Person();
+        return new Person(name, address, phone, age, gender);
     }
 }
