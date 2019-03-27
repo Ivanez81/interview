@@ -1,6 +1,6 @@
 package ru.blinov.hw1.builder;
 
-public interface PersonBuilder {
+public interface Builder {
 
     void setName(Name name);
     void setAddress(Address address);
